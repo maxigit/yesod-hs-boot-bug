@@ -15,6 +15,7 @@ library
     hs-source-dirs: ., app
     exposed-modules: Application
                      Foundation
+                     Role
                      Import
                      Import.NoFoundation
                      Model
@@ -28,7 +29,7 @@ library
         cpp-options:   -DDEVELOPMENT
         ghc-options:   -Wall -fwarn-tabs -O0
     else
-        ghc-options:   -Wall -fwarn-tabs -O2
+        ghc-options:   -Wall -fwarn-tabs -O2 -v
 
     extensions: TemplateHaskell
                 QuasiQuotes
