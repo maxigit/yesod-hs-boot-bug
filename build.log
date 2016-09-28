@@ -1,0 +1,352 @@
+Fames-0.0.0: build
+Preprocessing library Fames-0.0.0...
+Glasgow Haskell Compiler, Version 7.10.3, stage 2 booted by GHC version 7.10.2
+Using binary package database: /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/package.conf.d/package.cache
+Using binary package database: /home/max/.stack/snapshots/x86_64-linux/lts-6.1/7.10.3/pkgdb/package.cache
+Using binary package database: /home/max/lab/yesod-mysql/.stack-work/install/x86_64-linux/lts-6.1/7.10.3/pkgdb/package.cache
+Using binary package database: .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/package.conf.inplace/package.cache
+wired-in package ghc-prim mapped to ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e
+wired-in package integer-gmp mapped to integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d
+wired-in package base mapped to base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d
+wired-in package rts mapped to builtin_rts
+wired-in package template-haskell mapped to template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181
+wired-in package ghc mapped to ghc-7.10.3-be5219aceb0976c913043e27d1693295
+wired-in package dph-seq not found.
+wired-in package dph-par not found.
+Hsc static flags: 
+wired-in package ghc-prim mapped to ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e
+wired-in package integer-gmp mapped to integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d
+wired-in package base mapped to base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d
+wired-in package rts mapped to builtin_rts
+wired-in package template-haskell mapped to template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181
+wired-in package ghc mapped to ghc-7.10.3-be5219aceb0976c913043e27d1693295
+wired-in package dph-seq not found.
+wired-in package dph-par not found.
+*** Chasing dependencies:
+Chasing modules from: *Application.hs,*Foundation.hs,*Role.hs,*Import.hs,*Import.NoFoundation,*Model.hs,*Settings.hs,*Settings.StaticFiles,*Handler.Common,*Handler.Home,*Handler.Comment
+Created temporary directory: /tmp/max/ghc15721_0
+*** C pre-processor:
+/usr/bin/gcc -E -undef -traditional -include .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/autogen/cabal_macros.h -I .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/autogen -I .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I /usr/include/mysql -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-time-1.1.0.3-JVjJvknZJ0JKghfag2Jw2L/include -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/unix-compat-0.4.1.4-Km8uiabmElX5mrb8D4Fywe/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/proce_52AgREEfSrnJLlkGV9YZZJ/include -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/network-2.6.2.1-A6pE0dLgMEk2GtUa1JtTJQ/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx/include -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-algorithms-0.7.0.1-2O3XZ6glbAwDmJCc3dC3Ee/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn/include -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-0.11.0.0-LmZ3LQW4ivu8MsQuVgukln/include -I /home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS/include -I /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include '-D__GLASGOW_HASKELL__=710' -include /home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h '-Dlinux_BUILD_OS=1' '-Dx86_64_BUILD_ARCH=1' '-Dlinux_HOST_OS=1' '-Dx86_64_HOST_ARCH=1' '-D__GLASGOW_HASKELL_TH__=YES' '-D__SSE__=1' '-D__SSE2__=1' -x assembler-with-cpp Settings.hs -o /tmp/max/ghc15721_0/ghc_1.hscpp
+Stable obj: [Model]
+Stable BCO: []
+Ready for upsweep
+  [NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.10809463 UTC
+         ms_mod = Model,
+         ms_textual_imps = [import Database.Persist.Quasi,
+                            import ClassyPrelude.Yesod]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-09-28 20:12:22.086336789 UTC
+         ms_mod = Foundation[boot],
+         ms_textual_imps = []
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-09-28 19:41:31.448581345 UTC
+         ms_mod = Role,
+         ms_textual_imps = []
+         ms_srcimps = [import {-# SOURCE #-} Foundation]
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-09-28 20:12:00.578321224 UTC
+         ms_mod = Settings,
+         ms_textual_imps = [import Role,
+                            import qualified Database.MySQL.Base as MySQL,
+                            import Yesod.Default.Util
+                                ( WidgetFileSettings, widgetFileNoReload, widgetFileReload ),
+                            import Yesod.Default.Config2 ( applyEnvValue, configSettingsYml ),
+                            import Network.Wai.Handler.Warp ( HostPreference ),
+                            import Language.Haskell.TH.Syntax ( Exp, Name, Q ),
+                            import Database.Persist.MySQL ( MySQLConf(..) ),
+                            import Data.Yaml ( decodeEither' ),
+                            import Data.FileEmbed ( embedFile ),
+                            import Data.Aeson
+                                ( Result(..), fromJSON, withObject, (.!=), (.:?) ),
+                            import Control.Exception ( throw ), import ClassyPrelude.Yesod]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.10809463 UTC
+         ms_mod = Settings.StaticFiles,
+         ms_textual_imps = [import Yesod.Static ( staticFiles ),
+                            import Settings ( appStaticDir, compileTimeAppSettings )]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Import.NoFoundation,
+         ms_textual_imps = [import Yesod.Default.Config2 as Import,
+                            import Yesod.Core.Types as Import ( loggerSet ),
+                            import Yesod.Auth as Import, import Settings.StaticFiles as Import,
+                            import Settings as Import, import Model as Import,
+                            import ClassyPrelude.Yesod as Import]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-09-28 20:29:27.029021344 UTC
+         ms_mod = Foundation,
+         ms_textual_imps = [import Role,
+                            import qualified Data.Text.Encoding as TE,
+                            import qualified Data.CaseInsensitive as CI,
+                            import qualified Yesod.Core.Unsafe as Unsafe,
+                            import Yesod.Core.Types ( Logger ),
+                            import Yesod.Default.Util ( addStaticContentExternal ),
+                            import Yesod.Auth.OpenId ( authOpenId, IdentifierType(Claimed) ),
+                            import Text.Jasmine ( minifym ), import Text.Hamlet ( hamletFile ),
+                            import Database.Persist.Sql ( ConnectionPool, runSqlPool ),
+                            import Import.NoFoundation]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Import,
+         ms_textual_imps = [import Import.NoFoundation as Import,
+                            import Foundation as Import]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Handler.Common,
+         ms_textual_imps = [import Import,
+                            import Data.FileEmbed ( embedFile )]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Handler.Home,
+         ms_textual_imps = [import Text.Julius ( RawJS(..) ),
+                            import Yesod.Form.Bootstrap3
+                                ( BootstrapFormLayout(..), renderBootstrap3, withSmallInput ),
+                            import Import]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Handler.Comment,
+         ms_textual_imps = [import Import]
+         ms_srcimps = []
+      },
+   NONREC
+      ModSummary {
+         ms_hs_date = 2016-06-04 11:34:13.104094684 UTC
+         ms_mod = Application,
+         ms_textual_imps = [import Handler.Comment, import Handler.Home,
+                            import Handler.Common,
+                            import System.Log.FastLogger
+                                ( defaultBufSize, newStdoutLoggerSet, toLogStr ),
+                            import Network.Wai.Middleware.RequestLogger
+                                ( Destination(Logger),
+                                  IPAddrSource(..),
+                                  OutputFormat(..),
+                                  destination,
+                                  mkRequestLogger,
+                                  outputFormat ),
+                            import Network.Wai.Handler.Warp
+                                ( Settings,
+                                  defaultSettings,
+                                  defaultShouldDisplayException,
+                                  runSettings,
+                                  setHost,
+                                  setOnException,
+                                  setPort,
+                                  getPort ),
+                            import Network.Wai ( Middleware ),
+                            import Language.Haskell.TH.Syntax ( qLocation ), import Import,
+                            import Database.Persist.MySQL
+                                ( createMySQLPool, myConnInfo, myPoolSize, runSqlPool ),
+                            import Control.Monad.Logger ( liftLoc, runLoggingT )]
+         ms_srcimps = []
+      }]
+*** Deleting temp files:
+Deleting: 
+compile: input file Model.hs
+*** Checking old interface for Model:
+[ 1 of 12] Skipping  Model            ( Model.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Model.o )
+*** Deleting temp files:
+Deleting: /tmp/max/ghc15721_0/ghc_2.s
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_2.s
+compile: input file ./Foundation.hs-boot
+*** Checking old interface for Foundation:
+[ 2 of 12] Compiling Foundation[boot] ( Foundation.hs-boot, .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Foundation.o-boot )
+*** Parser:
+*** Renamer/typechecker:
+*** Tidy Core:
+writeBinIface: 1 Names
+writeBinIface: 3 dict entries
+*** Touching object file:
+touch .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Foundation.o-boot
+*** Deleting temp files:
+Deleting: /tmp/max/ghc15721_0/ghc_3.o
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_3.o
+compile: input file Role.hs
+*** Checking old interface for Role:
+[ 3 of 12] Skipping  Role             ( Role.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Role.o )
+*** Deleting temp files:
+Deleting: /tmp/max/ghc15721_0/ghc_4.s
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_4.s
+compile: input file /tmp/max/ghc15721_0/ghc_1.hscpp
+*** Checking old interface for Settings:
+[ 4 of 12] Compiling Settings         ( Settings.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Settings.o ) [TH]
+*** Parser:
+*** Renamer/typechecker:
+*** Simplify:
+*** CorePrep:
+*** ByteCodeGen:
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS --print-file-name libgmp.so
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx --print-file-name librt.so
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx --print-file-name libutil.so
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx --print-file-name libdl.so
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/zlib-0.6.1.1-7LjT7TSHX8U3VTy3t378Vu --print-file-name libz.so
+*** gcc:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -B/home/max/.stack/snapshots/x86_64-linux/lts-5.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/pcre-light-0.4.0.4-JppURsm0rdPKS0aZpOnBZS --print-file-name libpcre.so
+
+/home/max/lab/yesod-mysql/Settings.hs:23:1: Warning:
+    The import of ‘Role’ is redundant
+      except perhaps to import instances from ‘Role’
+    To import instances alone, use: import Role()
+*** Desugar:
+Result size of Desugar (after optimization)
+  = {terms: 339, types: 433, coercions: 3}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 349, types: 455, coercions: 3}
+Result size of Simplifier = {terms: 349, types: 455, coercions: 3}
+*** Specialise:
+Result size of Specialise = {terms: 736, types: 929, coercions: 99}
+*** Float out(FOS {Lam = Just 0, Consts = True, OverSatApps = False}):
+Result size of Float out(FOS {Lam = Just 0,
+                              Consts = True,
+                              OverSatApps = False})
+  = {terms: 903, types: 1,294, coercions: 99}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 3,176, types: 3,612, coercions: 1,641}
+Result size of Simplifier iteration=2
+  = {terms: 2,708, types: 2,771, coercions: 429}
+Result size of Simplifier
+  = {terms: 2,708, types: 2,771, coercions: 429}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 2,414, types: 2,346, coercions: 429}
+Result size of Simplifier iteration=2
+  = {terms: 2,422, types: 2,360, coercions: 429}
+Result size of Simplifier iteration=3
+  = {terms: 2,422, types: 2,360, coercions: 429}
+Result size of Simplifier
+  = {terms: 2,422, types: 2,360, coercions: 429}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 6,844, types: 3,759, coercions: 429}
+Result size of Simplifier iteration=2
+  = {terms: 4,521, types: 2,954, coercions: 429}
+Result size of Simplifier
+  = {terms: 4,521, types: 2,954, coercions: 429}
+*** Float inwards:
+Result size of Float inwards
+  = {terms: 4,521, types: 2,954, coercions: 429}
+*** Called arity analysis:
+Result size of Called arity analysis
+  = {terms: 4,521, types: 2,954, coercions: 429}
+*** Simplifier:
+Result size of Simplifier
+  = {terms: 4,521, types: 2,954, coercions: 429}
+*** Demand analysis:
+Result size of Demand analysis
+  = {terms: 4,521, types: 2,954, coercions: 429}
+*** Worker Wrapper binds:
+Result size of Worker Wrapper binds
+  = {terms: 4,827, types: 3,154, coercions: 429}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 4,529, types: 3,052, coercions: 429}
+Result size of Simplifier
+  = {terms: 4,352, types: 2,906, coercions: 429}
+*** Float out(FOS {Lam = Just 0, Consts = True, OverSatApps = True}):
+Result size of Float out(FOS {Lam = Just 0,
+                              Consts = True,
+                              OverSatApps = True})
+  = {terms: 4,550, types: 3,272, coercions: 429}
+*** Common sub-expression:
+Result size of Common sub-expression
+  = {terms: 4,353, types: 2,991, coercions: 416}
+*** Float inwards:
+Result size of Float inwards
+  = {terms: 4,353, types: 2,991, coercions: 416}
+*** Liberate case:
+Result size of Liberate case
+  = {terms: 4,353, types: 2,991, coercions: 416}
+*** Simplifier:
+Result size of Simplifier iteration=1
+  = {terms: 4,213, types: 2,717, coercions: 434}
+Result size of Simplifier iteration=2
+  = {terms: 4,199, types: 2,702, coercions: 416}
+Result size of Simplifier
+  = {terms: 4,199, types: 2,702, coercions: 416}
+*** SpecConstr:
+Result size of SpecConstr
+  = {terms: 4,199, types: 2,702, coercions: 416}
+*** Simplifier:
+Result size of Simplifier
+  = {terms: 4,199, types: 2,702, coercions: 416}
+*** Tidy Core:
+Result size of Tidy Core
+  = {terms: 2,785, types: 1,896, coercions: 292}
+writeBinIface: 88 Names
+writeBinIface: 423 dict entries
+*** CorePrep:
+Result size of CorePrep
+  = {terms: 4,254, types: 3,045, coercions: 292}
+*** Stg2Stg:
+*** CodeGen:
+*** Assembler:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -I. -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -x assembler -c /tmp/max/ghc15721_0/ghc_6.s -o .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Settings.o
+*** CorePrep:
+Result size of CorePrep
+  = {terms: 4,254, types: 3,045, coercions: 292}
+*** Stg2Stg:
+*** CodeGen:
+*** Assembler:
+/usr/bin/gcc -fno-stack-protector -DTABLES_NEXT_TO_CODE -I. -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build -fPIC -U__PIC__ -D__PIC__ -x assembler -c /tmp/max/ghc15721_0/ghc_8.s -o .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Settings.dyn_o
+*** Deleting temp files:
+Deleting: /tmp/max/ghc15721_0/ghc_9.c /tmp/max/ghc15721_0/ghc_8.s /tmp/max/ghc15721_0/ghc_7.c /tmp/max/ghc15721_0/ghc_6.s /tmp/max/ghc15721_0/ghc_5.s
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_9.c
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_7.c
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_5.s
+compile: input file ./Settings/StaticFiles.hs
+*** Checking old interface for Settings.StaticFiles:
+[ 5 of 12] Compiling Settings.StaticFiles ( Settings/StaticFiles.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.8.0/build/Settings/StaticFiles.o ) [TH]
+*** Parser:
+*** Renamer/typechecker:
+*** Simplify:
+*** CorePrep:
+*** ByteCodeGen:
+*** Deleting temp files:
+Deleting: /tmp/max/ghc15721_0/ghc_10.s /tmp/max/ghc15721_0/ghc_1.hscpp
+Warning: deleting non-existent /tmp/max/ghc15721_0/ghc_10.s
+*** Deleting temp dirs:
+Deleting: /tmp/max/ghc15721_0
+module Foundation cannot be linked; it is only available as a boot module
+
+--  While building package Fames-0.0.0 using:
+      /home/max/.stack/setup-exe-cache/x86_64-linux/setup-Simple-Cabal-1.22.8.0-ghc-7.10.3 --builddir=.stack-work/dist/x86_64-linux/Cabal-1.22.8.0 build lib:Fames exe:Fames --ghc-options " -ddump-hi -ddump-to-file"
+    Process exited with code: ExitFailure 1
+Stack CSW version
+stack: callProcess: /home/max/.local/bin/stack "build" (exit 1): failed
